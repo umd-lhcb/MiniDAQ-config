@@ -1,2 +1,3 @@
 # MiniDAQ-config
-Backup for configuration files on MiniDAQ
+This repository provides a detailed description on how to configure a MiniDAQ
+server from scratch.
