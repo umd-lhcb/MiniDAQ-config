@@ -10,3 +10,8 @@ fi
 
 # User specific aliases and functions
 export DIM_DNS_NODE=localhost
+
+# Quartus related
+export QUARTUSPATH=$HOME/opt/intelFPGA_lite/18.1
+export PATH=$PATH:${QUARTUSPATH}/quartus/bin
+export PATH=$PATH:${QUARTUSPATH}/nios2eds/bin
