@@ -2,9 +2,9 @@
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
+    source ~/.bashrc
 fi
 
 # For MiniDAQ
-jtagd
-GbtServ
+#jtagd
+#GbtServ
