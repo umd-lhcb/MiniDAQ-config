@@ -5,12 +5,14 @@ enabled=1
 gpgcheck=0
 protect=1
 
+
 [daq40-firmware-stable]
 name=DAQ40 firmware stable packages
 baseurl=http://lbyum.cern.ch/daq40/stable/fpga
 enabled=1
 gpgcheck=0
 protect=1
+
 
 [daq40-unstable]
 name=DAQ40 unstable packages for $basearch

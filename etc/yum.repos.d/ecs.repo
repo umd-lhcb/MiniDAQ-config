@@ -1,0 +1,18 @@
+# GbtServ software repositories
+[pci40-ecs]
+name=ECS for MiniDAQ
+baseurl=http://lbyum.cern.ch/daq40/ecs/pcie40
+enabled=1
+gpgcheck=0
+protect=1
+
+
+[amc40-ecs]
+name=ECS for MiniDAQ
+baseurl=http://lbyum.cern.ch/daq40/ecs/amc40
+enabled=0
+gpgcheck=0
+protect=1
+
+
+
