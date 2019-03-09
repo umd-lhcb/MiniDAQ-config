@@ -13,6 +13,3 @@ baseurl=http://lbyum.cern.ch/daq40/ecs/amc40
 enabled=0
 gpgcheck=0
 protect=1
-
-
-
