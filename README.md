@@ -38,23 +38,23 @@ CentOS 7 uses `yum` as its preferred package manager.
 
 To install package:
 ```
-yum install <package_name>
+# yum install <package_name>
 ```
 
 To search available package:
 ```
-yum search <packge_name>
+$ yum search <packge_name>
 ```
 
 To search on installed packages:
 ```
-yum list installed '<regexp_package_name>'
+$ yum list installed '<regexp_package_name>'
 ```
 
 To list package content, it is recommended to install `yum-utils`, and do the
 following:
 ```
-repoquery -l <package_name>
+$ repoquery -l <package_name>
 ```
 
 
