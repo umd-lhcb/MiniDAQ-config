@@ -155,6 +155,32 @@ To make `dns` auto start, we just need to:
 ```
 
 
+## Compile and install MiniDAQ kernel module
+MiniDAQ requires a CERN-developed kernel module to function. We use `dkms` to
+compile the module; `dkms` also makes sure that this module will be recompiled
+automatically on each kernel update.
+
+First, install:
+```
+# yum install dkms kernel-devel
+```
+
+Now tell `dkms` to manage, build, and install the MiniDAQ kernel module:
+```
+# dkms add -m lhcb-pcie40-driver -v <version>
+# dkms build -m lhcb-pcie40-driver -v <version>
+# dkms install -m lhcb-pcie40-driver -v <version>
+```
+the `<version>` should be the same as the installed `lhcb-pcie40-driver`
+package.
+
+Finally, enable `dkms` service so that this module will be automatically
+recompiled on each kernel update:
+```
+# systemctl enable dkms
+```
+
+
 ## Install MiniDAQ frontend control software
 From the same `readout40-software` repo, pull the following submodules:
 ```
