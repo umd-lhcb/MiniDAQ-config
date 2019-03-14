@@ -38,7 +38,8 @@ All configuration files are located in `config` of this project. Copy
 `confg/etc` to `/etc`, and `config/home/admin` to `/home/admin`.
 
 * Files under `config/etc` configures USB blaster (for MiniDAQ FPGA programming),
-  network interface naming, and screen resolution.
+  network interface naming, screen resolution, and a minimal MiniDAQ
+  configuration.
 
 * Files under `config/home/admin` configures `$PATH`, and physical screen sharing.
 
