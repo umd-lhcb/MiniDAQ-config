@@ -33,6 +33,31 @@ MiniDAQ server.
 [1]: http://linuxsoft.cern.ch/cern/centos/7/os/x86_64/images/boot.iso
 
 
+## CentOS 7 package management cheat sheet
+CentOS 7 uses `yum` as its preferred package manager.
+
+To install package:
+```
+yum install <package_name>
+```
+
+To search available package:
+```
+yum search <packge_name>
+```
+
+To search on installed packages:
+```
+yum list installed '<regexp_package_name>'
+```
+
+To list package content, it is recommended to install `yum-utils`, and do the
+following:
+```
+repoquery -l <package_name>
+```
+
+
 ## Copy configuration files
 All configuration files are located in `config` of this project. Copy
 `confg/etc` to `/etc`, and `config/home/admin` to `/home/admin`.
