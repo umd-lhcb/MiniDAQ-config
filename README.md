@@ -1,5 +1,5 @@
 # MiniDAQ-config
-This repository provides a description on how to configure a MiniDAQ server
+This repository provides a prescription on how to configure a MiniDAQ server
 from scratch.
 
 
@@ -82,6 +82,12 @@ lhcb-pcie40lli
 lhcb-pcie40lli-devices
 ```
 
+The `readout40-software` repo can be cloned with the following link (CERN
+credential required):
+```
+https://gitlab.cern.ch/lhcb-readout40/readout40-software.git
+```
+
 The MiniDAQ frontend control software is based on WinCC OA, a proprietary
 industry control platform. The WinCC rpms are located in `rpm` folder. Install
 all of them.
@@ -90,6 +96,11 @@ The license file, `shield.txt`, can be acquired from CERN. It should be put
 inside the root directory of WinCC OA installation. For example:
 ```
 /opt/WinCC_OA/3.15
+```
+
+Now we also need to make GBT server, `GbtServ`, autostart on boot:
+```
+# systemctl enable gbtserv
 ```
 
 
