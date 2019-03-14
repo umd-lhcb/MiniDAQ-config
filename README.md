@@ -113,6 +113,11 @@ credential required):
 https://gitlab.cern.ch/lhcb-readout40/readout40-software.git
 ```
 
+Then the submodule can be pulled with the following command:
+```
+git submodule update --init lli-rpms
+```
+
 The MiniDAQ frontend control software is based on WinCC OA, a proprietary
 industry control platform. The WinCC rpms are located in `rpm` folder. Install
 all of them.
@@ -148,3 +153,43 @@ To make `dns` auto start, we just need to:
 ```
 # systemctl enable dnsd
 ```
+
+
+## Install MiniDAQ frontend control software
+From the same `readout40-software` repo, pull the following submodules:
+```
+wincc-fwgbt
+wincc-fwhw
+wincc-fwminidaq
+```
+the `git` command can be found in [this section](#install-minidaq).
+
+Now create a **new distributed project** from **WinCC OA Project Administrator**.
+
+Download `fwInstallation` tool from: [3]. Then extract the component
+installation tool to the created project, overriding any existing files.
+
+In previous steps, we have installed `lhcb-daq40-jcop`. Use `repoquery` to
+locate its files. Run the new project, find the installation tool under the
+**JCOP framework** menu, and install the following components from the
+`lhcb-daq40-jcop` package:
+```
+fwCore
+fwDIM
+fwConfigurationDB
+```
+then restart the project.
+
+Use the same tool, install the following components from the `readout40-
+software` submodules:
+```
+fwGbt
+fwHW
+```
+restart project again, then install:
+```
+fwMiniDAQ
+```
+
+
+[3]: http://jcop.web.cern.ch/jcop-framework-component-installation-tool
