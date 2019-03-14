@@ -23,8 +23,43 @@ extra: http://mirror.umd.edu/centos/7.6.1810/extras/x86_64/
 updates: http://mirror.umd.edu/centos/7.6.1810/updates/x86_64/
 ```
 
+It is recommended to use LVM partitioning scheme, for it's easier to backup and
+resize.
+
+Create a user `admin`, and use the password sticked on the chasiss of the
+MiniDAQ server.
+
 
 [1]: http://linuxsoft.cern.ch/cern/centos/7/os/x86_64/images/boot.iso
+
+
+## Copy configuration files
+All configuration files are located in `config` of this project. Copy
+`confg/etc` to `/etc`, and `config/home/admin` to `/home/admin`.
+
+* Files under `config/etc` configures USB blaster (for MiniDAQ FPGA programming),
+  network interface naming, and screen resolution.
+
+* Files under `config/home/admin` configures `$PATH`, and physical screen sharing.
+
+
+## Remote access
+SSH will be enabled by CentOS installer by default. To enable remote screen
+sharing, install:
+```
+tigervnc (client)
+tigervnc-server
+tigervnc-server-minimal
+```
+
+Use `vncpasswd` to set an additional password for sharing physical screen. Then
+the configuration file copied in the previous section should take care of the
+rest.
+
+To also share login screen, follow the RedHat instruction: [2].
+
+
+[2]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-tigervnc
 
 
 ## Install MiniDAQ
@@ -45,6 +80,7 @@ We also need to clone the `readout40-software/lli-rpms`, and install:
 lhcb-pcie40lli
 lhcb-pcie40lli-devices
 ```
+
 
 ## Install DIM DNS
 We need to install the following packages:
