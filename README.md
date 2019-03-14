@@ -2,7 +2,32 @@
 This repository provides a description on how to configure a MiniDAQ server
 from scratch.
 
-## MiniDAQ packages
+
+## Install CentOS 7
+We can download a CentOS 7 installation media from cern: [1].
+
+Then write the ISO to a USB drive with the following command:
+```
+dd if=<path_to_iso> of=/dev/sdX
+```
+note that `sdX` is the root of the USB device node, not a partition like
+`sdXN`.
+
+**WARNING**: This will rewrite all data on the USB drive.
+
+Follow the instructions on the graphical installer. For software repo, it is
+recommended to use UMD mirror:
+```
+base: http://mirror.umd.edu/centos/7.6.1810/os/x86_64/
+extra: http://mirror.umd.edu/centos/7.6.1810/extras/x86_64/
+updates: http://mirror.umd.edu/centos/7.6.1810/updates/x86_64/
+```
+
+
+[1]: http://linuxsoft.cern.ch/cern/centos/7/os/x86_64/images/boot.iso
+
+
+## Install MiniDAQ
 From the `daq40/ecs` repos, we need to install the following packages:
 ```
 gbtserv
@@ -21,7 +46,7 @@ lhcb-pcie40lli
 lhcb-pcie40lli-devices
 ```
 
-## DIM DNS packages
+## Install DIM DNS
 We need to install the following packages:
 ```
 dim
