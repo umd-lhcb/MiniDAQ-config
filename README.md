@@ -1,6 +1,6 @@
 # MiniDAQ-config
-This repository provides a detailed description on how to configure a MiniDAQ
-server from scratch.
+This repository provides a description on how to configure a MiniDAQ server
+from scratch.
 
 ## MiniDAQ packages
 From the `daq40/ecs` repos, we need to install the following packages:
