@@ -219,3 +219,13 @@ fwMiniDAQ
 
 
 [3]: http://jcop.web.cern.ch/jcop-framework-component-installation-tool
+
+
+## On the placement of WinCC OA license file
+One can obtain an one-year WinCC OA license from CERN by filling out a form.
+The license file is named as `shield.txt`
+
+The preferred location of the license is:
+```
+/opt/WinCC_OA/3.15
+```
