@@ -8,7 +8,7 @@ We can download a CentOS 7 installation media from cern: [1].
 
 Then write the ISO to a USB drive with the following command:
 ```
-dd if=<path_to_iso> of=/dev/sdX
+# dd if=<path_to_iso> of=/dev/sdX
 ```
 note that `sdX` is the root of the USB device node, not a partition like
 `sdXN`.
@@ -115,7 +115,7 @@ https://gitlab.cern.ch/lhcb-readout40/readout40-software.git
 
 Then the submodule can be pulled with the following command:
 ```
-git submodule update --init lli-rpms
+$ git submodule update --init lli-rpms
 ```
 
 The MiniDAQ frontend control software is based on WinCC OA, a proprietary
