@@ -82,7 +82,7 @@ Use `vncpasswd` to set an additional password for sharing physical screen. Then
 the configuration file copied in the previous section should take care of the
 rest.
 
-To also share login screen, follow the RedHat instruction: [2].
+To also share login screen, follow the RedHat instruction (13.1.4): [2].
 
 
 [2]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-tigervnc
