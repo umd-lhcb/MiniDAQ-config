@@ -1,0 +1,20 @@
+[daq40lli-cern]
+name=DAQ40 LLI for pcie40 boards for $basearch
+baseurl=https://lbyum.cern.ch/daq40/lli/$basearch
+enabled=0
+gpgcheck=0
+protect=1
+
+[daq40lli-cern-unstable]
+name=DAQ40 LLI for pcie40 boards for $basearch (Unstable)
+baseurl=https://lbyum.cern.ch/daq40/lli/unstable/$basearch
+enabled=0
+gpgcheck=0
+protect=1
+
+[daq40lli-cern-md2]
+name=DAQ40 LLI for pcie40 boards (Minidaq2) for $basearch
+baseurl=https://lbyum.cern.ch/daq40/lli/minidaq2/$basearch
+enabled=1
+gpgcheck=0
+protect=1
