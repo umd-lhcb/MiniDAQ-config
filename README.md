@@ -101,26 +101,15 @@ lhcb-pcie40-tools
 lhcb-pcie40-tools-debuginfo
 ```
 
-We also need to clone the `readout40-software/lli-rpms`, and install:
+We also need to install the following packages (where?):
 ```
 lhcb-pcie40lli
 lhcb-pcie40lli-devices
 ```
 
-The `readout40-software` repo can be cloned with the following link (CERN
-credential required):
-```
-https://gitlab.cern.ch/lhcb-readout40/readout40-software.git
-```
-
-Then the submodule can be pulled with the following command:
-```
-$ git submodule update --init lli-rpms
-```
-
 The MiniDAQ frontend control software is based on WinCC OA, a proprietary
 industry control platform. The WinCC rpms are located in `rpm` folder. Install
-all of them.
+all of them (those rpms can only be obtained with special CERN permission).
 
 Now we also need to make GBT server, `GbtServ`, autostart on boot:
 ```
@@ -176,13 +165,12 @@ recompiled on each kernel update:
 
 
 ## Install MiniDAQ frontend control software
-From the same `readout40-software` repo, pull the following submodules:
+From [4], pull the following projects:
 ```
-wincc-fwgbt
-wincc-fwhw
-wincc-fwminidaq
+wincc-fwGbt
+wincc-fwHw
+wincc-fwMiniDAQ
 ```
-the `git` command can be found in [this section](#install-minidaq).
 
 Now create a **new distributed project** from **WinCC OA Project Administrator**.
 
@@ -213,6 +201,7 @@ fwMiniDAQ
 
 
 [3]: http://jcop.web.cern.ch/jcop-framework-component-installation-tool
+[4]: https://gitlab.cern.ch/lhcb-readout40
 
 
 ## On the placement of WinCC OA license file
