@@ -57,6 +57,23 @@ following:
 $ repoquery -l <package_name>
 ```
 
+To remove packages and all its dependencies, it is recommended to add the
+following line to `/etc/yum.conf`:
+```
+clean_requirements_on_remove=1
+```
+
+We can force `yum` to check if there's any unneeded packages:
+```
+# yum autoremove
+```
+
+To deal with `.rpmsave` and `rpmnew` files, install `rpmconf` and:
+```
+# rpmconf -a
+```
+Follow the instructions on-screen.
+
 
 ## Copy configuration files
 All configuration files are located in `config` of this project. Copy
