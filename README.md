@@ -188,8 +188,8 @@ fwConfigurationDB
 ```
 then restart the project.
 
-Use the same tool, install the following components from the `readout40-
-software` submodules:
+Use the same tool, install the following components from the projects we just
+cloned:
 ```
 fwGbt
 fwHW
