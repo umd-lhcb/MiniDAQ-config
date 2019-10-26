@@ -89,7 +89,7 @@ To also share login screen, follow the RedHat instruction (13.1.4): [2].
 
 
 ## Install MiniDAQ
-From the `daq40/ecs` repos, we need to install the following packages:
+From the `daq40` repos, we need to install the following packages:
 ```
 gbtserv
 lhcb-daq40-common
@@ -101,7 +101,7 @@ lhcb-pcie40-tools
 lhcb-pcie40-tools-debuginfo
 ```
 
-We also need to install the following packages (where?):
+We also need to install the following packages from `daq40lli` repos:
 ```
 lhcb-pcie40lli
 lhcb-pcie40lli-devices
