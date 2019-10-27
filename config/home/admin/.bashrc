@@ -5,11 +5,10 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
-export DIM_DNS_NODE=localhost
+# Source DIM env variables
+if [ -f /etc/sysconfig/dim ]; then
+    . /etc/sysconfig/dim
+fi
 
 # Quartus related
 export QUARTUSPATH=$HOME/opt/intelFPGA_lite/18.1
