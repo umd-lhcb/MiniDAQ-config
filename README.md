@@ -202,6 +202,7 @@ locate its files. Run the new project, find the installation tool under the
 fwCore
 fwDIM
 fwConfigurationDB
+fwFSMConfDB
 ```
 then restart the project.
 
