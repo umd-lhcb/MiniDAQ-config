@@ -229,5 +229,5 @@ The license file is named as `shield.txt`
 
 The preferred location of the license is:
 ```
-/opt/WinCC_OA/3.15
+/opt/WinCC_OA/3.16
 ```
