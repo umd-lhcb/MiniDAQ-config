@@ -203,6 +203,7 @@ fwCore
 fwDIM
 fwConfigurationDB
 fwFSMConfDB
+fwTrending
 ```
 then restart the project.
 
