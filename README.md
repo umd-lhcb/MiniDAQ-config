@@ -2,6 +2,11 @@
 This repository provides a prescription on how to configure a MiniDAQ server
 from scratch.
 
+Current software versions:
+* `gbtserv`: 6.0.7 (probably need ask experts to get latest `rpm` package).
+* WinCC OA: 3.16 (need to renew license).
+* For all WinCC OA MiniDAQ components, use latest `git master`.
+
 
 ## Install CentOS 7
 We can download a CentOS 7 installation media from cern: [1].
