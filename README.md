@@ -188,11 +188,12 @@ recompiled on each kernel update:
 
 
 ## Install MiniDAQ frontend control software
-From [4], pull the following projects:
+
+Clone the following projects:
 ```
-wincc-fwGbt
-wincc-fwHw
-wincc-fwMiniDAQ
+git clone https://gitlab.cern.ch/lhcb-readout40/software/wincc-fwgbt.git
+git clone https://gitlab.cern.ch/lhcb-readout40/software/wincc-fwhw.git
+git clone https://gitlab.cern.ch/lhcb-readout40/software/wincc-fwminidaq.git
 ```
 
 Now create a **new distributed project** from **WinCC OA Project Administrator**.
