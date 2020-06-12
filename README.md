@@ -22,13 +22,7 @@ note that `sdX` is the root of the USB device node, not a partition like
 
 **WARNING**: This will rewrite all data on the USB drive.
 
-Follow the instructions on the graphical installer. For software repo, it is
-recommended to use UMD mirror:
-```
-base: http://mirror.umd.edu/centos/7.6.1810/os/x86_64/
-extra: http://mirror.umd.edu/centos/7.6.1810/extras/x86_64/
-updates: http://mirror.umd.edu/centos/7.6.1810/updates/x86_64/
-```
+Follow the instructions on the graphical installer.
 
 It is recommended to use LVM partitioning scheme, for it's easier to backup and
 resize.
