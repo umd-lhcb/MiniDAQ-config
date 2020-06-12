@@ -3,8 +3,9 @@ This repository provides a prescription on how to configure a MiniDAQ server
 from scratch.
 
 Current software versions:
+
 * Firmware: `firmware/lhcb_daq_firmware_readout40_pcie40v1_minidaq_forUT_Bologna+realsim_12+12links_unset_090620.sof`
-* `gbtserv`: 6.2.11 (probably need ask experts to get latest `rpm` package).
+* `gbtserv`: 6.2.11.
 * WinCC OA: 3.16.
 * For all WinCC OA MiniDAQ components, use latest `git master` (as of Jun 12, 2020).
 
