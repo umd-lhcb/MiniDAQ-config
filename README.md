@@ -52,6 +52,11 @@ To search on installed packages:
 $ yum list installed '<regexp_package_name>'
 ```
 
+To list all locally-configured repositories:
+```
+$ yum repolist
+```
+
 To list package content, it is recommended to install `yum-utils`, and do the
 following:
 ```
