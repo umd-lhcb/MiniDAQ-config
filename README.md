@@ -11,7 +11,7 @@ Current software versions:
 
 
 ## Install CentOS 7
-We can download a CentOS 7 installation media from cern: [1].
+We can download a CentOS 7 installation media from CERN: [1].
 
 Then write the ISO to a USB drive with the following command:
 ```
