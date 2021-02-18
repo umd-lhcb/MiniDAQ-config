@@ -139,6 +139,11 @@ Now we also need to make GBT server, `GbtServ`, autostart on boot:
 # systemctl enable gbtserv
 ```
 
+If you want to start WinCC OA project administrator:
+```
+startPA
+```
+
 
 ## Install DIM DNS
 We need to install the following packages:
